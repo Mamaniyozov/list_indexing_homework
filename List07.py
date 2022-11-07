@@ -6,4 +6,13 @@ def main(list1):
     Returns:
         list: return answer
     """
-    return
+    i=0
+    k=0
+    n=len(list1)
+    while i<n:
+        if list1[i]==0:
+            k+=1
+            k=False
+        i+=1
+    return k
+print(main([2,3,40,0,0,6]))
